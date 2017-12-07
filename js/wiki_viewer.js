@@ -56,14 +56,7 @@ const searchWiki = () => {
             myBlock.appendChild(fieldBox);
         };
 
+        document.getElementById('query').value = '';
         return true;
     }
 }
-
-
-function randomWiki(){
-    window.open('https://en.wikipedia.org/wiki/Special:Random','_blank');
-}
-
-
-
