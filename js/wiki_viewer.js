@@ -1,4 +1,12 @@
 
+const node = document.getElementById("query");
+node.addEventListener('keydown', function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        searchWiki();
+    }
+});
+
 const searchWiki = () => {
 
     var searchString = document.getElementById("query").value;
@@ -60,3 +68,4 @@ const searchWiki = () => {
         return true;
     }
 }
+
